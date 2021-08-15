@@ -1,32 +1,17 @@
-Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary;;;
-"Estimate,US East (N. Virginia),route 53,Amazon Route 53,0,183,2196.00,USD,""Hosted Zones (1), Number of Elastic Network Interfaces (2)""";;;
-Estimate,US East (N. Virginia),,S3 Standard,0,1177.6,14131.20,USD,S3 Standard storage (50 TB per month);;;
-"Estimate,US East (N. Virginia),,Data Transfer,0,0,0.00,USD,""DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month)""";;;
-Estimate,US East (N. Virginia),nat ,Amazon Virtual Private Cloud (VPC),0,34.65,415.80,USD,Number of NAT Gateways (1);;;
-Estimate,US East (N. Virginia),Elastic Load Balancing Application,Application Load Balancer,0,62.05,744.60,USD,Number of Application Load Balancers (2);;;
-"Estimate,US East (N. Virginia),,Amazon EC2,0,16554.280571,198651.37,USD,""Operating system (Linux), Storage amount (7 TB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month), Workload (Weekly, Baseline: 10, Peak: 22, Duration of peak: 3 Day 0 Hr 0 Min), Advance EC2 instance (t3a.small), Pricing strategy (On-Demand), Snapshot Frequency (2x Daily), Amount changed per snapshot (3 GB)""";;;
-"Estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,0,0.00,USD,""Working days per month (22), DT Inbound: Not selected (15 TB per month), DT Outbound: Not selected (15 TB per month), DT Intra-Region: (0 TB per month)""";;;
-"Estimate,US East (N. Virginia),,DynamoDB provisioned capacity,630,346.3,4785.60,USD,""Average item size (all attributes) (4 KB), Write reserved capacity term (1 year), Read reserved capacity term (1 year), Data storage size (1000 GB)""";;;
-"Estimate,US East (N. Virginia),,DynamoDB Backup and restore,0,450,5400.00,USD,""On-demand backup data storage (1000 GB), Point-In-Time Recovery (PITR) data storage (1000 GB), Table data restored (1000 GB)""";;;
-;;;
-;;;
-;;;
-Acknowledgement;;;
-* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.;;;
-;;;
-;;;
-Monthly cost, 18,807.88 USD;;;
-;;;
-* Changes;;;
-Budget for data DynamoDB backup;;;
-Increase data storage capacity, part of the provisioned capacity will be used for a dynamodb readreplica instance;;;
-Use EC2 more expensive instance and On-demand price strategy. With a bigger buget a company doesn't have to reserved instances unless the compute load necessary is known;;;
-The EC2 instances were scaled-up and scaled-out;;;
-;;;
-;;;
-;;;
-;;;
-;;;
-;;;
-;;;
-;;;
+﻿Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+Increased Cost Estimate,US East (N. Virginia),,S3 Standard,0,706.56,8478.72,USD,S3 Standard storage (30 TB per month)
+Increased Cost Estimate,US East (N. Virginia),,Data Transfer,0,0,0.00,USD,
+Increased Cost Estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,0,0.00,USD,"Working days per month (22), DT Inbound: Not selected (20 TB per month), DT Outbound: Not selected (20 TB per month), DT Intra-Region: (0 TB per month)"
+Increased Cost Estimate,US East (N. Virginia),,Application Load Balancer,0,56.28,675.36,USD,Number of Application Load Balancers (3)
+Increased Cost Estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,74.7,896.40,USD,Number of NAT Gateways (2)
+Increased Cost Estimate,US East (N. Virginia),,Amazon RDS for MySQL,0,7669.759999999999,92037.12,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (1 TB), Quantity (2), Instance type (db.m6g.8xlarge), Deployment option (Multi-AZ), Pricing strategy (OnDemand), Additional backup storage (1 TB)"
+Increased Cost Estimate,US East (N. Virginia),,Amazon EC2,0,9765.011418,117180.14,USD,"Operating system (Linux), Storage amount (30 GB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month), Workload (Weekly, Baseline: 12, Peak: 24, Duration of peak: 3 Day 0 Hr 0 Min), Advance EC2 instance (m5.4xlarge), Pricing strategy (On-Demand), Snapshot Frequency (2x Daily), Amount changed per snapshot (3 GB)"
+
+
+
+Acknowledgement
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
+
+"* With a bigger budget we can scale up the RDS instances so they can handle more data."
+"* Also we can return the ec2 instances for their previous m5.4xlarge type. The baseline number of EC2 instances running is
+higher to serve more requests and can scale out when needed."
