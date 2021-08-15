@@ -1,12 +1,11 @@
 ﻿Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
-Fist Estimate,US East (N. Virginia),route 53,Amazon Route 53,0,183,2196.00,USD,"Hosted Zones (1), Number of Elastic Network Interfaces (2)"
-Fist Estimate,US East (N. Virginia),,S3 Standard,0,117.76,1413.12,USD,S3 Standard storage (5 TB per month)
-Fist Estimate,US East (N. Virginia),,Data Transfer,0,0,0.00,USD,"DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month)"
-Fist Estimate,US East (N. Virginia),nat ,Amazon Virtual Private Cloud (VPC),0,34.65,415.80,USD,Number of NAT Gateways (1)
-Fist Estimate,US East (N. Virginia),Elastic Load Balancing Application,Application Load Balancer,0,62.05,744.60,USD,Number of Application Load Balancers (2)
-Fist Estimate,US East (N. Virginia),,Amazon EC2,0,8986.375713000001,107836.51,USD,"Operating system (Linux), Storage amount (5 TB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month), Workload (Weekly, Baseline: 8, Peak: 16, Duration of peak: 3 Day 0 Hr 0 Min), Advance EC2 instance (t3a.small), Pricing strategy (On-Demand), Snapshot Frequency (2x Daily), Amount changed per snapshot (3 GB)"
-Fist Estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,0,0.00,USD,"Working days per month (22), DT Inbound: Not selected (15 TB per month), DT Outbound: Not selected (15 TB per month), DT Intra-Region: (0 TB per month)"
-Fist Estimate,US East (N. Virginia),,DynamoDB provisioned capacity,630,121.30000000000001,2085.60,USD,"Average item size (all attributes) (4 KB), Write reserved capacity term (1 year), Read reserved capacity term (1 year), Data storage size (100 GB)"
+Initial Estimate,US East (N. Virginia),,S3 Standard,0,706.56,8478.72,USD,S3 Standard storage (30 TB per month)
+Initial Estimate,US East (N. Virginia),,Data Transfer,0,0,0.00,USD,
+Initial Estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,0,0.00,USD,"Working days per month (22), DT Inbound: Not selected (20 TB per month), DT Outbound: Not selected (20 TB per month), DT Intra-Region: (0 TB per month)"
+Initial Estimate,US East (N. Virginia),,Application Load Balancer,0,56.28,675.36,USD,Number of Application Load Balancers (3)
+Initial Estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,74.7,896.40,USD,Number of NAT Gateways (2)
+Initial Estimate,US East (N. Virginia),,Amazon RDS for MySQL,0,776.8199999999999,9321.84,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (500 GB), Quantity (2), Instance type (db.m5.large), Deployment option (Multi-AZ), Pricing strategy (OnDemand), Additional backup storage (500 GB)"
+Initial Estimate,US East (N. Virginia),,Amazon EC2,0,6510.034253,78120.41,USD,"Operating system (Linux), Storage amount (30 GB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month), Workload (Weekly, Baseline: 8, Peak: 16, Duration of peak: 3 Day 0 Hr 0 Min), Snapshot Frequency (2x Daily), Amount changed per snapshot (3 GB), Advance EC2 instance (m5.4xlarge), Pricing strategy (On-Demand)"
 
 
 
