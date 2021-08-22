@@ -1,0 +1,53 @@
+Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment 
+in this project.
+
+AWS Config Dashboard
+    - Rule Violations
+        - securityhub-iam-password-policy-symbol-check-202d85a4
+            - Checks whether the account password policy for IAM users requires at least one symbol in password.
+        - securityhub-iam-password-policy-number-check-12ac3afa
+            - Checks whether the account password policy for IAM users requires at least one number in password.
+        - securityhub-cloudfront-accesslogs-enabled-25a3098a
+            - This control checks to see if server access logging is enabled on CloudFront Distributions. The control will fail if access logging is not enabled for the distribution.
+        - securityhub-cloudfront-origin-failover-enabled-4c4a8d09
+            - Checks whether an origin group is configured for the distribution of at least 2 origins in the origin group for Amazon CloudFront. This rule is NON_COMPLIANT if there are no origin groups for the distribution.
+        - securityhub-aurora-mysql-backtracking-enabled-6e001b66
+            - This control checks if Amazon Aurora clusters have backtracking enabled.
+        - securityhub-cloud-trail-encryption-enabled-da66f4d0
+            - Ensure CloudTrail logs are encrypted at rest using KMS CMKs
+        - securityhub-autoscaling-group-elb-healthcheck-required-9812e955
+            - Checks whether your Auto Scaling groups that are associated with a load balancer are using Elastic Load Balancing health checks.
+        - securityhub-dax-encryption-enabled-e471246c
+            - Checks that DynamoDB Accelerator (DAX) clusters are encrypted. The rule is NON_COMPLIANT if a DAX cluster is not encrypted.
+        - securityhub-api-gw-execution-logging-enabled-d8cca7ca
+            - Checks that all stages in Amazon API Gateway REST and WebSocket APIs have logging enabled. The rule is NON_COMPLIANT if logging is not enabled. The rule is NON_COMPLIANT if loggingLevel is neither ERROR nor INFO.
+        - securityhub-access-keys-rotated-3f4924cb
+            - Checks whether the active access keys are rotated within the number of days specified in maxAccessKeyAge
+        - securityhub-iam-password-policy-minimum-length-check-993b98f5
+            - Checks whether the account password policy for IAM users requires minimum password length.
+        - securityhub-guardduty-enabled-centralized-6f04b71c
+            - This AWS control checks whether Amazon GuardDuty is enabled in your AWS account and region.
+        - securityhub-iam-password-policy-recommended-defaults-521bf099
+            - Checks whether the account password policy for IAM users meets the specified requirements.
+        - securityhub-ec2-imdsv2-check-133783f1
+            - Checks whether your Amazon Elastic Compute Cloud (Amazon EC2) instance metadata version is configured with Instance Metadata Service Version 2 (IMDSv2).
+        - securityhub-ec2-ebs-encryption-by-default-2db9c077
+            - Checks that Amazon Elastic Block Store (EBS) encryption is enabled by default. The rule is NON_COMPLIANT if the encryption is not enabled.
+        - securityhub-ec2-instance-no-public-ip-de8357a3
+            - Checks whether Amazon Elastic Compute Cloud (Amazon EC2) instances have a public IP association. The rule is NON_COMPLIANT if the publicIp field is present in the Amazon EC2 instance configuration item. This rule applies only to IPv4.
+        - securityhub-alb-http-drop-invalid-header-enabled-a917f1ab
+            - Checks if rule evaluates Application Load Balancers (ALBs) to ensure they are configured to drop http headers. The rule is NON_COMPLIANT if the value of routing.http.drop_invalid_header_fields.enabled is set to false.
+        - securityhub-alb-http-to-https-redirection-check-bf2740aa
+            - Checks whether HTTP to HTTPS redirection is configured on all HTTP listeners of Application Load Balancers. The rule is NON_COMPLIANT if one or more HTTP listeners of Application Load Balancers do not have HTTP to HTTPS redirection configured.
+        - securityhub-vpc-default-security-group-closed-3bbf8518
+            - Checks whether the default security group for VPC is closed.
+
+Amazon Inspector - High Severity Findings on instance i-0c56426f109bd0e09 (Web Service Instance - C3)
+    - On instance i-0c56426f109bd0e09, TCP port 23 which is associated with 'Telnet' is reachable from the internet
+    - On instance i-0c56426f109bd0e09, UDP port 21 which is associated with 'FTP' is reachable from the internet
+    - On instance i-0c56426f109bd0e09, UDP port 20 which is associated with 'FTP' is reachable from the internet
+    - On instance i-0c56426f109bd0e09, TCP port 21 which is associated with 'FTP' is reachable from the internet
+    - On instance i-0c56426f109bd0e09, UDP port 23 which is associated with 'Telnet' is reachable from the internet
+    - On instance i-0c56426f109bd0e09, TCP port 20 which is associated with 'FTP' is reachable from the internet
+
+

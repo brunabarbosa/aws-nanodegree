@@ -1,0 +1,9 @@
+Based on the architecture diagram, and the steps you have taken so far to upload data and access the application web service, identify at least 2 obvious poor practices as it relates to security.  Include justification.
+
+# Poor practice 1
+S3 bucket connection is leaving the aws infrastructure and throgh the internet. 
+An S3 VPC endpoint provides a way for an S3 request to be routed through to the Amazon S3 service, 
+without having to connect a subnet to an internet gateway.
+
+# Poor practice 2
+Security Group - WebAppSg should restrict ip access in order to only the intended users to have access.

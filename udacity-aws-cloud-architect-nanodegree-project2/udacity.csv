@@ -1,0 +1,60 @@
+Id,Nome,Biblioteca de formas,ID da p´ágina,Contido por,Grupo,Origem da linha,Destino da linha,Seta de origem,Seta de destino,Área de texto 1
+1,Página,,,,,,,,,Página 1
+2,AWS Cloud,Arquitetura AWS 2019,1,,,,,,,AWS Cloud
+3,Virtual Private Cloud,Arquitetura AWS 2019,1,2|5,,,,,,Virtual Private Cloud 10.0.0.0/16
+4,Availability Zone,Arquitetura AWS 2019,1,2|3|5,,,,,,Availability Zone us-east-1a
+5,Region,Arquitetura AWS 2019,1,2,,,,,,Region us-east-1
+6,Public Subnet,Arquitetura AWS 2019,1,2|3|4|5,,,,,,Public subnet 1 (Web Server) 10.0.0.0/24
+7,Private Subnet,Arquitetura AWS 2019,1,2|3|4|5,,,,,,Private subnet 1 (Application Server) 10.0.1.0/24
+8,Amazon EC2,Arquitetura AWS 2019,1,2|3|4|5|6|15,,,,,,Amazon EC2 M5.4xlarge
+9,Amazon EC2,Arquitetura AWS 2019,1,2|3|4|5|6|15,,,,,,Amazon EC2 M5.4xlarge
+10,Texto,Padrão,1,2|3|4|5|7,,,,,,Master
+11,AWS General Mobile Client,Arquitetura AWS 2019,1,,,,,,,AWS General Mobile Client
+12,Client,Arquitetura AWS 2019,1,,,,,,,Client
+13,AWS General Users,Arquitetura AWS 2019,1,,,,,,,AWS General Users
+14,Amazon CloudFront,Arquitetura AWS 2019,1,2,,,,,,Amazon CloudFront
+15,Generic Group,Arquitetura AWS 2019,1,2|3|4|5|6,,,,,,Generic Group
+16,Auto Scaling,Arquitetura AWS 2019,1,2|3|4|5|6|15,,,,,,Auto Scaling
+17,Amazon EC2,Arquitetura AWS 2019,1,2|3|4|5|7|19,,,,,,Amazon EC2 M5.4xlarge
+18,Amazon EC2,Arquitetura AWS 2019,1,2|3|4|5|7|19,,,,,,Amazon EC2 M5.4xlarge
+19,Generic Group,Arquitetura AWS 2019,1,2|3|4|5|7,,,,,,Generic Group
+20,Auto Scaling,Arquitetura AWS 2019,1,2|3|4|5|7|19,,,,,,Auto Scaling
+21,Availability Zone,Arquitetura AWS 2019,1,2|3|5,,,,,,Availability Zone us-east-1b
+22,Public Subnet,Arquitetura AWS 2019,1,2|3|5|21,,,,,,Public subnet 2 (Web Server) 10.0.2.0/24
+23,Private Subnet,Arquitetura AWS 2019,1,2|3|5|21,,,,,,Private subnet 2 (Application Server) 10.0.3.0/24
+24,Amazon EC2,Arquitetura AWS 2019,1,2|3|5|21|22|27,,,,,,Amazon EC2 M5.4xlarge
+25,Amazon EC2,Arquitetura AWS 2019,1,2|3|5|21|22|27,,,,,,Amazon EC2 M5.4xlarge
+26,Texto,Padrão,1,2|3|5|21|23,,,,,,Slave
+27,Generic Group,Arquitetura AWS 2019,1,2|3|5|21|22,,,,,,Generic Group
+28,Auto Scaling,Arquitetura AWS 2019,1,2|3|5|21|22|27,,,,,,Auto Scaling
+29,Amazon EC2,Arquitetura AWS 2019,1,2|3|5|21|23|31,,,,,,Amazon EC2 M5.4xlarge
+30,Amazon EC2,Arquitetura AWS 2019,1,2|3|5|21|23|31,,,,,,Amazon EC2 M5.4xlarge
+31,Generic Group,Arquitetura AWS 2019,1,2|3|5|21|23,,,,,,Generic Group
+32,Auto Scaling,Arquitetura AWS 2019,1,2|3|5|21|23|31,,,,,,Auto Scaling
+33,Amazon RDS,Arquitetura AWS 2019,1,2|3|4|5|7,,,,,,Amazon RDS db.M5.large
+34,Amazon RDS,Arquitetura AWS 2019,1,2|3|5|21|23,,,,,,Amazon RDS db.M5.large
+35,Elastic Load Balancing,Arquitetura AWS 2019,1,2|3|4|5|6,,,,,,Elastic Load Balancing
+36,Elastic Load Balancing,Arquitetura AWS 2019,1,2|3|5|21|23,,,,,,Elastic Load Balancing
+37,NAT gateway,Arquitetura AWS 2019,1,2|3|4|5|6,,,,,,NAT gateway Elastic IP:  198.51.100.4
+38,Internet gateway,Arquitetura AWS 2019,1,2|3|5,,,,,,Internet gateway
+39,NAT gateway,Arquitetura AWS 2019,1,2|3|5|21|22,,,,,,NAT gateway Elastic IP:  198.51.102.1
+40,Elastic Load Balancing,Arquitetura AWS 2019,1,2|3|4|5|7,,,,,,Elastic Load Balancing
+41,Amazon Simple Storage Service (S3),Arquitetura AWS 2019,1,2,,,,,,Amazon Simple Storage Service (S3)
+42,Linha,,1,,,13,11,None,Arrow,
+43,Linha,,1,,,13,12,None,Arrow,
+44,Linha,,1,,,11,,None,Arrow,
+45,Linha,,1,,,12,,None,Arrow,
+46,Linha,,1,,,10,26,None,Arrow,Replicate
+47,Linha,,1,,,16,37,None,Arrow,
+48,Linha,,1,,,35,28,None,Arrow,
+49,Linha,,1,,,35,16,None,Arrow,
+50,Linha,,1,,,36,32,None,Arrow,
+51,Linha,,1,,,14,41,None,Arrow,
+52,Linha,,1,,,19,33,None,Arrow,Write
+53,Linha,,1,,,31,33,None,Arrow,Write
+54,Linha,,1,,,14,38,None,Arrow,
+55,Linha,,1,,,38,35,None,Arrow,
+56,Linha,,1,,,37,40,None,Arrow,
+57,Linha,,1,,,40,20,None,Arrow,
+58,Linha,,1,,,28,39,None,Arrow,
+59,Linha,,1,,,39,36,None,Arrow,

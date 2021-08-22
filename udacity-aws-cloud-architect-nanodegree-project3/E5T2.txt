@@ -1,0 +1,21 @@
+# Identify tools that will allow you to do the following:
+
+## Scan infrastructure as code templates
+Tool: Checkov
+
+### Example vulnerability
+Could find credentials in code, as AWS Access key.
+
+##Scan AMI’s or containers for OS vulnerabilities
+Tool: Clair
+
+### Example vulnerability
+openssh vulnerability
+
+##Scan an AWS environment for cloud configuration vulnerabilities
+Tool: AWS Config
+
+### Example vulnerability
+Checks whether unrestricted incoming traffic for the security groups is accessible to the specified ports 
+[3389, 20, 23, 110, 143, 3306, 8080, 1433, 9200, 9300, 25, 445, 135, 21, 1434, 4333, 5432, 5500, 5601, 22] that have 
+the highest risk.
